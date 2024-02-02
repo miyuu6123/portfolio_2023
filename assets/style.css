@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url("./ress.min.css");
+/************************************************************
+*/
+/*	General
+*/
+/***********************************************************/
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: "Meiryo", serif;
+  color: #212121;
+  margin: auto;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.inner {
+  width: 1400px;
+  margin: auto; 
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+  padding: .25em 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin-bottom: 1em;
+}
+
+p{
+  line-height: 1.5;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+/******************************************
+/*	header
+/*****************************************/
+header {
+  background-color: #0d4b0e;  /* 背景 */
+  color: #fff; /* 文字色 */
+  height: 20vh; /* 高さ: */
+  display: flex; /* 子要素をフレックス */
+  flex-direction: column;
+  justify-content: center;
+}
+header h1,
+header .catch-copy {
+  text-align: right;
+  margin-right: 20%; /* 外余白-右: 20% */
+  font-size: 3em; /* 文字サイズ */
+
+}
+/******************************************
+/*	main
+/*****************************************/
+
+main {
+  margin: auto;
+}
+
+
+.bg_pattern {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  min-height: 100vh;
+}
+.Paper_v2 {
+  background-image:
+    repeating-linear-gradient(to bottom,
+      transparent 25px,
+      rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+      transparent 27px,  transparent 51px, 
+      rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+      transparent 53px,  transparent 77px, 
+      rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+      transparent 79px,  transparent 103px, 
+      rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+      transparent 105px,  transparent 129px, 
+      rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+ 
+    repeating-linear-gradient(to right,
+      transparent 25px,
+      rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+      transparent 27px,  transparent 51px, 
+      rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+      transparent 53px,  transparent 77px, 
+      rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+      transparent 79px,  transparent 103px, 
+      rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+      transparent 105px,  transparent 129px, 
+      rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+
+      width: 100%;
+      min-height: 100vh;
+
+
+}
+
+section h2 {
+  margin-bottom: 1em; /* 外余白-下: 1em */
+}
+section h2 span {
+  font-size: 1rem; /* 文字サイズ: 1rem */
+}
+section p {
+  line-height: 1.8; /* 行高: 1.8文字分 */
+}
+
+
+
+
+/*** section#first ***/
+section#first {
+  width: 100%; /* 幅: 100% */
+  padding-top: 10%;
+  padding-bottom: 10px;
+}
+section#first h2 {
+  font-size: 3em; /* 文字サイズ */
+  margin-bottom: 40px;
+}
+section#first h2 span {
+  display: block;
+}
+section#first h3 {
+  font-size: 1em;
+  margin-left: 53%;
+} 
+
+section#first h4  {
+  font-size: 40px;
+  margin-left: 50%;
+  margin-bottom: 20px;
+  font-size: 3em; /* 文字サイズ */
+}
+
+section#first p {
+  margin-left: 45%;
+  font-size: 25px;  
+  margin-bottom: 40px;
+}
+
+section#first {
+  margin: auto; /* 文字寄せ */
+}
+
+section#first img {
+  margin-left: 15%;
+  margin-top: 50px;
+}
+
+
+
+/*** section#hobby ***/
+
+section#hobby {
+  width: 100%; /* 幅: 100% */
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+section#hobby h3  {
+  font-size: 3em;
+  margin-right: 64%;
+  text-align: right;
+
+}
+section#hobby h4  {
+  font-size: 2em;
+  margin-right: 62%;
+  text-align: right;
+}
+
+section#hobby p {
+  margin-right: 62%;
+  font-size: 25px; 
+  text-align: right;
+  margin-bottom: 200px;
+}
+
+section#hobby .img-area1 {
+  margin-right: 80%;
+  width: 300px;
+  height: auto;
+}
+
+section#hobby .img-area2 {
+  margin-top: 20%;
+}
+
+/*** section#skill ***/
+section#skill {
+  width: 100%; /* 幅: 100% */
+  margin-top: 40px;
+  margin: auto; /* 文字寄せ */
+
+}
+section#skill .inner{
+  margin-bottom: 40px;
+}
+
+section#skill h2 {
+  font-size: 3em; /* 文字サイズ */
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+section#skill h3 {
+  font-size: 3em; /* 文字サイズ */
+  float: left;
+}
+
+section#skill  p {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+
+section#skill .study {
+  margin-top: 40px;
+  margin-bottom: 10%;
+}
+
+
+section#skill .shikaku {
+  margin-bottom: 100px;
+}
+
+
+
+
+
+/*** section#third ***/
+section#third {
+  width: 100%; /* 幅: 100% */
+  padding: 100px 0; /* 内余白-上下: 150px */
+  margin: auto; /* 文字寄せ */
+}
+section#third h2 {
+  font-size: 3em; /* 文字サイズ */
+  margin: auto;
+}
+
+section#third .img-area {
+  margin-top: 40px; /* 外余白-上: 40px */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section#third .img-area img:nth-of-type( n + 3 ) {
+  margin-top: 70px; /* 外余白-上: 60px */
+}
+
